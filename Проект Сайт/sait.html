@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Apple Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <a href="http://127.0.0.1:5500/sait2.html">
+            <img src="apple_logo.png" alt="Apple Logo" class="apple-logo">
+        </a>
+    </header>
+    
+    
+    <main>
+        <section class="slider">
+            <!-- Your slider content here -->
+        </section>
+        <section class="products" id="products-section">
+            <!-- Products will be dynamically loaded here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+    </footer>
+    <section class="modal" id="iphoneModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>iPhone 15 Pro Max</h2>
+            <p>
+                iPhone 15 Pro Max - это флагманский смартфон компании Apple, предназначенный для пользователей, которые ценят передовые технологии и высокое качество исполнения. Он обладает мощным процессором, качественным дисплеем, продвинутой камерой и удобным интерфейсом.</p>
+            <button id="buyButton">Купить</button>
+        </div>
+    </section>
+    <section class="modal" id="ipadModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>iPad 12 Pro</h2>
+            <p>Новый iPad Pro 12 – первый (и самый доступный) айпад с самым большим дисплеем диагональю 12.9″. Тонкий, легкий, но очень производительный способен заменить собой полноценный ноутбук. Он оснащен специальным разъемом для подключения клавиатуры и поддерживает подключение стилуса Apple Pencil.</p>
+            <button id="buyIpadButton">Купить</button>
+        </div>
+    </section>
+    <section class="modal" id="macModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>MacBook Pro 13</h2>
+            <p>
+                MacBook Pro 13 - это портативный ноутбук высокого класса от Apple, предназначенный для профессиональных пользователей и тех, кто ценит производительность и качество. </p>
+            <button id="buyMacButton">Купить</button>
+        </div>
+    </section>
+    <section class="modal" id="watchModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Apple Watch Series 9</h2>
+            <p>Новый Apple Watch Series 9 с передовыми функциями и долгим временем автономной работы.Apple Watch Series 9 — новейшая версия самых популярных в мире часов. С новым чипом S9 они стали ещё более мощными, а ещё поддерживают контроль через двойное касание пальцами в воздухе.</p>
+            <button id="buyWatchButton">Купить</button>
+        </div>
+    </section>
+    <section class="modal" id="supportModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Поддержка</h2>
+            <form id="supportForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="complaint">Жалоба:</label>
+                <textarea id="complaint" name="complaint" rows="4" required></textarea>
+                <button type="submit" id="sendButton">Отправить</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
